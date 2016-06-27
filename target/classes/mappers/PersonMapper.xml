@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<Mapper namespace="Temporal.ktLib.mapper.PersonMapper">
+
+	<ResultMap id="personResultMap" type="Temporal.ktLib.domain.Person">
+		<Id property = "id" colummn="ID"/>
+		<Result property="name" column="NAME"/>
+	</ResultMap>
+
+	<select id = "get" resultMap = "personResultMap">
+        SELECT ID,NAME FROM PERSON
+    </select>
+    
+</Mapper>

@@ -1,0 +1,15 @@
+06-27 00:14:35 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PERSON" already exists; SQL statement:
+CREATE TABLE PERSON (        ID INT NOT NULL AUTO_INCREMENT,        NAME VARCHAR (20) NOT NULL,        PRIMARY KEY (ID) ) [42101-160]
+06-27 00:15:17 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE" not found; SQL statement:
+DELETE TABLE PERSON [42102-160]
+06-27 00:16:01 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "DROP TABLE IF EXIST[*] PERSON"; expected "EXISTS"; SQL statement:
+DROP TABLE IF EXIST PERSON [42001-160]
+06-27 00:25:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "GETALL[*] "; expected "GRANT, {"; SQL statement:
+getAll [42001-160]
+06-27 00:27:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "GETALL[*] "; expected "GRANT, {"; SQL statement:
+getAll [42001-160]
